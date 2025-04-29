@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Programs for Students and Teachers</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+    header {
+      background: linear-gradient(135deg, #4CAF50, #81C784);
+      color: white;
+      text-align: center;
+      padding: 60px 20px;
+    }
+    header h1 {
+      font-size: 48px;
+      margin-bottom: 10px;
+    }
+    section {
+      padding: 60px 20px;
+    }
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 0 20px;
+    }
+    section h2 {
+      text-align: center;
+      font-size: 36px;
+      margin-bottom: 40px;
+      color: #4CAF50;
+    }
+    .program-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+    .program-card {
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      padding: 30px;
+      width: 300px;
+      transition: transform 0.3s;
+    }
+    .program-card:hover {
+      transform: translateY(-10px);
+    }
+    .program-card h3 {
+      font-size: 24px;
+      color: #333;
+      margin-bottom: 15px;
+      text-align: center;
+    }
+    .program-card p {
+      font-size: 16px;
+      color: #666;
+      text-align: center;
+    }
+    footer {
+      background-color: #2e7d32;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+    .language-switcher {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+    }
+    .language-switcher button {
+      background-color: white;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      padding: 5px 10px;
+      margin-left: 10px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+<div class="language-switcher">
+  <button onclick="setLanguage('en')">English</button>
+  <button onclick="setLanguage('kk')">Қазақша</button>
+</div>
+
+<header>
+  <img src="#" alt="Логотип" style="display: flex;: 60px;">
+  <h1 data-i18n="headerTitle">Our Programs</h1>
+  <p data-i18n="headerSubtitle">Explore our English programs for students and teachers</p>
+</header>
+
+<section id="students">
+  <div class="container">
+    <h2 data-i18n="studentsTitle">Programs for Students</h2>
+    <div class="program-list">
+      <div class="program-card">
+        <h3><a href="6.html">Primary school</a></h3>
+        <p data-i18n="kidsDesc">Fun and engaging English lessons designed for children aged 6–12 years.</p>
+      </div>
+      <div class="program-card">
+        <h3><a href="7.html">Middle school</a></h3>
+        <p data-i18n="teenDesc">Interactive courses for teenagers to boost academic and conversational English skills.</p>
+      </div>
+      <div class="program-card">
+        <h3><a href="8.html">High school</a></h3>
+        <p data-i18n="adultDesc">Practical English courses for adults to improve communication for work and travel.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="teachers">
+  <div class="container">
+    <h2 data-i18n="teachersTitle">Programs for Teachers</h2>
+    <div class="program-list">
+      <div class="program-card">
+        <h3><a href="4.html">Teacher Training Program</a></h3>
+        <p data-i18n="trainDesc">Specialized courses to enhance teaching methods and classroom management skills.</p>
+      </div>
+      <div class="program-card">
+        <h3><a href="5.html">English Teaching Methods</a></h3>
+        <p data-i18n="methodDesc">Learn modern and effective methods for teaching English to various age groups.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>© 2025 Learn English Online. All rights reserved.</p>
+  <p>Бізбен байланыс: <a href="mailto:info@english-courses.com">info@english-courses.com</a></p>
+  <p>Әлеуметтік желілерде бізді табыңыз:</p>
+  <div>
+    <a href="https://facebook.com" target="_blank">Facebook</a> |
+    <a href="https://twitter.com" target="_blank">Twitter</a> |
+    <a href="https://instagram.com" target="_blank">Instagram</a>
+    <img src="IMG_7336.jp">
+  </div>
+</footer>
+
+<script>
+  const translations = {
+    en: {
+      headerTitle: "Our Programs",
+      headerSubtitle: "Explore our English programs for students and teachers",
+      studentsTitle: "Programs for Students",
+      kidsDesc: "Fun and engaging English lessons designed for children aged 6–12 years.",
+      teenDesc: "Interactive courses for teenagers to boost academic and conversational English skills.",
+      adultDesc: "Practical English courses for adults to improve communication for work and travel.",
+      teachersTitle: "Programs for Teachers",
+      trainDesc: "Specialized courses to enhance teaching methods and classroom management skills.",
+      methodDesc: "Learn modern and effective methods for teaching English to various age groups.",
+    },
+    kk: {
+      headerTitle: "Біздің Бағдарламалар",
+      headerSubtitle: "Оқушылар мен мұғалімдерге арналған ағылшын тіліндегі бағдарламалар",
+      studentsTitle: "Оқушыларға арналған бағдарламалар",
+      kidsDesc: "6–12 жастағы балаларға арналған қызықты және тиімді ағылшын сабақтары.",
+      teenDesc: "Жасөспірімдерге арналған академиялық және сөйлесу дағдыларын дамыту курстары.",
+      adultDesc: "Ересектерге арналған жұмыс пен саяхат үшін ағылшын тілін үйрететін курс.",
+      teachersTitle: "Мұғалімдерге арналған бағдарламалар",
+      trainDesc: "Сабақ беру әдістерін және сыныпты басқару дағдыларын жақсартуға арналған курс.",
+      methodDesc: "Әр жастағы топтарға ағылшын тілін үйретудің заманауи тиімді әдістері.",
+    }
+  };
+
+  function setLanguage(lang) {
+    document.querySelectorAll('[data-i18n]').forEach(elem => {
+      const key = elem.getAttribute('data-i18n');
+      elem.textContent = translations[lang][key];
+    });
+  }
+
+  // Default language
+  setLanguage('en');
+</script>
+
+</body>
+</html>
