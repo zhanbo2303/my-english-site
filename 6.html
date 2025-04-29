@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kids English - Балаларға арналған ағылшын</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #fffaf0;
+      color: #333;
+    }
+    header {
+      background-color: #ffcc80;
+      padding: 40px 20px;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 40px;
+      margin: 0;
+    }
+    header p {
+      font-size: 20px;
+    }
+    section {
+      max-width: 900px;
+      margin: auto;
+      padding: 30px 20px;
+    }
+    .lesson {
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      padding: 25px;
+      margin-bottom: 30px;
+    }
+    .lesson img {
+      width: 100%;
+      max-width: 300px;
+      display: block;
+      margin: 10px auto;
+    }
+    .lesson h2 {
+      color: #f57c00;
+    }
+    .words {
+      background-color: #fff3e0;
+      padding: 10px;
+      border-left: 5px solid #f57c00;
+      margin: 10px 0;
+    }
+    footer {
+      background-color: #f57c00;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Kids English</h1>
+  <p>6–12 жастағы балаларға арналған ағылшын тілі сабағы</p>
+</header>
+
+<section>
+  <div class="lesson">
+    <h2>Сабақ 1: Амандасу (Greetings)</h2>
+    <div class="words">
+      <p><strong>Hello</strong> – Сәлем</p>
+      <p><strong>Hi</strong> – Сәлем (бейресми)</p>
+      <p><strong>Good morning</strong> – Қайырлы таң</p>
+      <p><strong>Goodbye</strong> – Сау бол</p>
+    </div>
+    <p>📌 <strong>Түсіндірме:</strong> Адаммен алғаш кездескенде немесе қоштасқанда қолданылатын сөздер.</p>
+    <p>🎯 <strong>Ойын:</strong> Оқушылар бір-бірімен жұптасып амандасып, есімін айту (Hello! My name is Ali!).</p>
+    <img src="https://cdn.pixabay.com/photo/2016/03/31/19/56/say-1298724_960_720.png" alt="Greetings Image">
+  </div>
+
+  <div class="lesson">
+    <h2>Сабақ 2: Сандар (Numbers)</h2>
+    <div class="words">
+      <p><strong>One</strong> – Бір</p>
+      <p><strong>Two</strong> – Екі</p>
+      <p><strong>Three</strong> – Үш</p>
+      <p><strong>Four</strong> – Төрт</p>
+      <p><strong>Five</strong> – Бес</p>
+    </div>
+    <p>📌 <strong>Түсіндірме:</strong> Балалар заттарды санап үйренеді. Саусақпен көрсету әдісі жақсы нәтиже береді.</p>
+    <p>🎯 <strong>Тапсырма:</strong> Мұғалім 3 зат көрсетеді – бала ағылшын тілінде санап айтуы тиіс ("Three apples").</p>
+    <img src="https://cdn.pixabay.com/photo/2017/01/31/13/14/one-2021044_960_720.png" alt="Numbers Image">
+  </div>
+
+  <div class="lesson">
+    <h2>Сабақ 3: Түстер (Colors)</h2>
+    <div class="words">
+      <p><strong>Red</strong> – Қызыл</p>
+      <p><strong>Blue</strong> – Көк</p>
+      <p><strong>Green</strong> – Жасыл</p>
+      <p><strong>Yellow</strong> – Сары</p>
+    </div>
+    <p>📌 <strong>Түсіндірме:</strong> Түстерді суреттер мен заттар арқылы үйрету тиімді. Сұрақ-жауап әдісі ұсынылады.</p>
+    <p>🎯 <strong>Сұрақ:</strong> Мұғалім бір түсті көрсетеді – бала ағылшынша атын атайды ("This is blue").</p>
+    <img src="https://cdn.pixabay.com/photo/2014/04/03/11/50/paint-311315_960_720.png" alt="Colors Image">
+  </div>
+
+  <div class="lesson">
+    <h2>Сабақ 4: Жануарлар (Animals)</h2>
+    <div class="words">
+      <p><strong>Cat</strong> – Мысық</p>
+      <p><strong>Dog</strong> – Ит</p>
+      <p><strong>Bird</strong> – Құс</p>
+      <p><strong>Fish</strong> – Балық</p>
+    </div>
+    <p>📌 <strong>Түсіндірме:</strong> Жануарларды суретпен, дауысымен және мимика арқылы үйрену балаларға қызықты.</p>
+    <p>🎯 <strong>Ойын:</strong> Мұғалім жануарды сипаттайды, оқушы атын табады ("It says meow – It's a cat!").</p>
+    <img src="https://cdn.pixabay.com/photo/2017/01/31/13/14/animals-2021095_960_720.png" alt="Animals Image">
+  </div>
+
+</section>
+<section>
+  <div class="lesson">
+    <h2>🎮 Интерактивті ойын: Түсті тап!</h2>
+    <p>Көрсетілген ағылшын сөзінің қай түске тиесілі екенін табыңыз:</p>
+    <h3 id="colorWord">Red</h3>
+
+    <div style="display: flex; gap: 20px; justify-content: center; margin-top: 20px;">
+      <button onclick="checkAnswer('red')" style="background:red; color:white; padding: 10px 20px;">🔴</button>
+      <button onclick="checkAnswer('blue')" style="background:blue; color:white; padding: 10px 20px;">🔵</button>
+      <button onclick="checkAnswer('green')" style="background:green; color:white; padding: 10px 20px;">🟢</button>
+      <button onclick="checkAnswer('yellow')" style="background:gold; color:black; padding: 10px 20px;">🟡</button>
+    </div>
+
+    <p id="result" style="font-size: 20px; text-align: center; margin-top: 20px;"></p>
+  </div>
+</section>
+
+<script>
+  const words = [
+    { word: 'Red', answer: 'red' },
+    { word: 'Blue', answer: 'blue' },
+    { word: 'Green', answer: 'green' },
+    { word: 'Yellow', answer: 'yellow' }
+  ];
+  let current = 0;
+
+  function showWord() {
+    document.getElementById('colorWord').textContent = words[current].word;
+    document.getElementById('result').textContent = '';
+  }
+
+  function checkAnswer(color) {
+    if (color === words[current].answer) {
+      document.getElementById('result').textContent = '✅ Дұрыс!';
+      document.getElementById('result').style.color = 'green';
+    } else {
+      document.getElementById('result').textContent = '❌ Қате! Қайта көр.';
+      document.getElementById('result').style.color = 'red';
+    }
+
+    current = (current + 1) % words.length;
+    setTimeout(showWord, 1000);
+  }
+
+  // бастау
+  showWord();
+</script>
+
+
+
+
+ 
+  
+<footer>
+  <p>© 2025 Kids English. Дайындаған: Балаларға арналған ағылшын тілі жобасы</p>
+</footer>
+
+</body>
+
+</html>

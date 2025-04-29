@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+  <meta charset="UTF-8">
+  <title>High School English</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f0f4f8;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background: linear-gradient(135deg, #3f51b5, #5c6bc0);
+      color: white;
+      padding: 50px 20px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 36px;
+    }
+    .content {
+      max-width: 900px;
+      margin: auto;
+      padding: 30px 20px;
+    }
+    .lesson {
+      background: white;
+      padding: 25px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      margin-bottom: 30px;
+    }
+    h2 {
+      color: #3f51b5;
+    }
+    ul {
+      padding-left: 20px;
+    }
+    .quiz {
+      background: #fff3e0;
+      padding: 20px;
+      border-radius: 10px;
+      margin-top: 30px;
+    }
+    .quiz h3 {
+      margin-top: 0;
+    }
+    .quiz input[type="radio"] {
+      margin-right: 10px;
+    }
+    button {
+      padding: 10px 20px;
+      background: #4caf50;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+    #result {
+      font-weight: bold;
+      margin-top: 10px;
+    }
+    footer {
+      background: #303f9f;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>High School English</h1>
+  <p>9–11 сыныптарға арналған ағылшын тілі курсы</p>
+</header>
+
+<div class="content">
+
+  <div class="lesson">
+    <h2>Сабақ 1: Future Plans (Болашақ жоспарлар)</h2>
+    <p><strong>Грамматика:</strong> Future Simple (will + verb)</p>
+    <ul>
+      <li>I will go to university.</li>
+      <li>She will become a doctor.</li>
+    </ul>
+    <p><strong>Тапсырма:</strong> Өз болашағыңыз туралы 5 сөйлем жазыңыз.</p>
+  </div>
+
+  <div class="lesson">
+    <h2>Сабақ 2: Passive Voice (Ырықсыз етіс)</h2>
+    <p><strong>Түсініктеме:</strong> Егер кім орындағаны маңызды болмаса, пассив формасы қолданылады.</p>
+    <ul>
+      <li>The homework <b>is done</b> by the student.</li>
+      <li>English <b>is spoken</b> around the world.</li>
+    </ul>
+    <p><strong>Жаттығу:</strong> Сөйлемдерді пассив формада жазыңыз:</p>
+    <ul>
+      <li>They clean the classroom. → The classroom _____</li>
+      <li>He writes a letter. → A letter _____</li>
+    </ul>
+  </div>
+
+  <div class="lesson">
+    <h2>Сабақ 3: Reported Speech (Тура және жанама сөз)</h2>
+    <p><strong>Түсініктеме:</strong> Біреудің сөзін басқаларға жеткізу үшін қолданылады.</p>
+    <ul>
+      <li>She said, "I am tired." → She said that she was tired.</li>
+      <li>He said, "I will come." → He said that he would come.</li>
+    </ul>
+    <p><strong>Жаттығу:</strong> Сөйлемдерді жанама сөзге айналдырыңыз:</p>
+    <ul>
+      <li>She said, "I like tea."</li>
+      <li>John said, "We are happy."</li>
+    </ul>
+  </div>
+
+  <div class="quiz">
+    <h3>🧪 Mini-Test: Future Simple</h3>
+    <form id="quizForm">
+      <p>1. He ____ play football tomorrow.</p>
+      <label><input type="radio" name="q1" value="will"> will</label><br>
+      <label><input type="radio" name="q1" value="does"> does</label><br>
+      <label><input type="radio" name="q1" value="is"> is</label><br>
+
+      <p>2. They ____ visit us next week.</p>
+      <label><input type="radio" name="q2" value="will"> will</label><br>
+      <label><input type="radio" name="q2" value="are"> are</label><br>
+      <label><input type="radio" name="q2" value="do"> do</label><br>
+
+      <p>3. I ____ help you with your homework.</p>
+      <label><input type="radio" name="q3" value="will"> will</label><br>
+      <label><input type="radio" name="q3" value="am"> am</label><br>
+      <label><input type="radio" name="q3" value="can"> can</label><br>
+
+      <button type="button" onclick="checkAnswers()">Тексеру</button>
+    </form>
+    <p id="result"></p>
+  </div>
+</div>
+
+<footer>
+  <p>© 2025 High School English. Барлық құқықтар қорғалған.</p>
+</footer>
+
+<script>
+  function checkAnswers() {
+    const form = document.getElementById('quizForm');
+    const answers = {
+      q1: 'will',
+      q2: 'will',
+      q3: 'will'
+    };
+    let score = 0;
+
+    for (let key in answers) {
+      const selected = form.elements[key].value;
+      if (selected === answers[key]) {
+        score++;
+      }
+    }
+
+    const result = document.getElementById('result');
+    result.textContent = `Сіздің нәтижеңіз: ${score} / 3`;
+    result.style.color = score === 3 ? 'green' : 'red';
+  }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Adult English – Ересектерге арналған ағылшын</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f4f6f8;
+      color: #333;
+    }
+    header {
+      background: linear-gradient(135deg, #0d47a1, #1976d2);
+      color: white;
+      text-align: center;
+      padding: 60px 20px;
+    }
+    header h1 {
+      font-size: 40px;
+      margin-bottom: 10px;
+    }
+    header p {
+      font-size: 18px;
+    }
+    section {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    h2 {
+      color: #0d47a1;
+      text-align: center;
+      font-size: 30px;
+      margin-bottom: 30px;
+    }
+    .features {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+    .card {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      padding: 25px;
+      width: 280px;
+      text-align: center;
+    }
+    .card h3 {
+      color: #1565c0;
+      margin-bottom: 15px;
+    }
+    footer {
+      background: #0d47a1;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+    .btn {
+      background-color: #1976d2;
+      color: white;
+      border: none;
+      padding: 12px 24px;
+      font-size: 16px;
+      border-radius: 8px;
+      cursor: pointer;
+      margin-top: 20px;
+      display: inline-block;
+    }
+    .btn:hover {
+      background-color: #0d47a1;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Adult English</h1>
+  <p>Ересектерге арналған ағылшын тілі курсы – жұмыс пен саяхат үшін</p>
+</header>
+
+<section>
+  <h2>Курс артықшылықтары</h2>
+  <div class="features">
+    <div class="card">
+      <h3>Кәсіби ағылшын</h3>
+      <p>Жұмыс орнында қажетті сөздер, жазу стилі мен келіссөз жүргізу.</p>
+    </div>
+    <div class="card">
+      <h3>Саяхат ағылшынша</h3>
+      <p>Әуежай, қонақ үй, мейрамхана, шопинг секілді жағдайлар үшін дайындық.</p>
+    </div>
+    <div class="card">
+      <h3>Сөйлесу тәжірибесі</h3>
+      <p>Топтық сөйлесу, диалог жаттығулары, шынайы жағдайдағы қолдану.</p>
+    </div>
+    <div class="card">
+      <h3>Икемді кесте</h3>
+      <p>Сабақтар кешкісін немесе демалыс күндері, онлайн түрде өткізіледі.</p>
+    </div>
+  </div>
+
+  <div style="text-align:center;">
+    <a href="https://example.com/register" class="btn">Курсқа жазылу</a>
+  </div>
+</section>
+
+<footer>
+  <p>© 2025 Adult English. Барлық құқықтар қорғалған.</p>
+</footer>
+
+</body>
+</html>
